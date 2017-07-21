@@ -1,0 +1,32 @@
+<!-- <h1>my-component works! finally!!!</h1>
+<h3>{{name | uppercase}}</h3>
+<p>{{x | currency}}</p>
+<p>{{y}}</p>
+<p>{{x+y}}</p>
+<p>{{myStr}} {{x}}</p>
+<input type="text" name="" value="x"><br>
+<p>{{user | json}}</p>
+<p>{{today | date: 'shortTime'}}</p> -->
+<!-- <h1 *ngIf='myBoolean'>Show this!</h1>
+<h1 *ngIf='!myBoolean'>Don't show this!</h1>
+
+<h3 *ngFor="let i of myArray">{{i}}</h3>
+<button (click)='logNum()'>Log the num value</button>
+<h1>{{num}}</h1>
+<button (click)='num = num + 1'>Increment num</button><br> -->
+
+<h2>Here is a form</h2>
+<form (submit)="onSubmit()">
+  First Name:<input
+  type="text"
+  name="firstName"
+  required
+  minlength="4"
+  maxlength="24"
+  [(ngModel)]='user2.firstName'
+  #firstName='ngModel'><br>
+  {{firstName.errors | json}}
+  <input type="submit" value="Submit">
+</form>
+
+{{user2 | json}}
